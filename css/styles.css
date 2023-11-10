@@ -1,0 +1,95 @@
+body {
+    background-color: #43A047;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    width: 700px; /* Define um tamanho máximo para o quadro branco */
+    height: 400px;
+    text-align: justify; /* Alinha o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Estilos para a imagem responsiva */
+.responsive-image {
+    max-width: 15%; /* A imagem não ultrapassará a largura do contêiner */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+/* Estilos para a imagem-container */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Coloca as imagens com espaço entre elas */
+    width: 100%; /* Garante que o container de imagens ocupe a largura total */
+}
+
+/* Estilos para o botão */
+.button {
+    background-color: #106CC8;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Estilos do botão quando o mouse passa por cima */
+.button:hover {
+    background-color: #0056b3; /* Altere para a cor desejada */
+}
+
+/* Estilos para os botões da segunda tela */
+.button-block {
+    display: block; /* Faz com que os botões ocupem a largura total do contêiner */
+    margin-top: 10px; /* Adiciona espaço entre os botões (opcional) */
+}
+
+/* Estilos para os contêineres das listas suspensas */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+/* Estilos para cada lista suspensa */
+.dropdown {
+    flex: 1; /* Distribui o espaço igualmente entre as listas suspensas */
+    margin-right: 10px; /* Espaço entre as listas suspensas (opcional) */
+}
+
+/* Estilização do popup */
+.popup {
+    display: none; /* Inicialmente, o popup está oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    text-align: center;
+    z-index: 999; /* Z-index alto para exibir acima de outros elementos */
+}
+
+.mensagem-erro {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Sombra suave */
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centralizar verticalmente e horizontalmente */
+}
